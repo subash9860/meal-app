@@ -20,6 +20,7 @@ class CategoryMealScreen extends StatelessWidget {
     final categoryTitle = routeArgs['title'];
     final categoryId = routeArgs['id'];
 
+    // ignore: non_constant_identifier_names
     final CatergoriesMeal = DUMMY_MEALS.where((meal) {
       return meal.categories.contains(categoryId);
     }).toList();

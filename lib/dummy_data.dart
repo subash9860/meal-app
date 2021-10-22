@@ -91,7 +91,7 @@ const  DUMMY_MEALS = [
     affordability: Affordability.Affordable,
     complexity: Complexity.Simple,
     imageUrl:
-    'assets/a.png',
+    'assets/b.jpeg',
         // 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg/800px-Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg',
     duration: 20,
     ingredients: [
@@ -126,7 +126,9 @@ const  DUMMY_MEALS = [
     complexity: Complexity.Simple,
     imageUrl:
         // 'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',
-    'assets/a.png',
+    // 'assets/a.png',
+    'assets/b.jpeg',
+
     
     duration: 10,
     ingredients: [
@@ -189,7 +191,9 @@ const  DUMMY_MEALS = [
     affordability: Affordability.Luxurious,
     complexity: Complexity.Challenging,
     imageUrl:
-    'assets/a.png',
+    // 'assets/a.png',
+    'assets/b.jpeg',
+
 
         // 'https://cdn.pixabay.com/photo/2018/03/31/19/29/schnitzel-3279045_1280.jpg',
     duration: 60,
@@ -265,7 +269,9 @@ const  DUMMY_MEALS = [
     affordability: Affordability.Affordable,
     complexity: Complexity.Hard,
     imageUrl:
-    'assets/a.png',
+    // 'assets/a.png',
+    'assets/b.jpeg',
+
 
         // 'https://cdn.pixabay.com/photo/2017/05/01/05/18/pastry-2274750_1280.jpg',
     duration: 240,
@@ -302,7 +308,8 @@ const  DUMMY_MEALS = [
     affordability: Affordability.Affordable,
     complexity: Complexity.Simple,
     imageUrl:
-    'assets/a.png',
+    // 'assets/a.png',
+    'assets/b.jpeg',
 
         // 'https://cdn.pixabay.com/photo/2018/07/10/21/23/pancake-3529653_1280.jpg',
     duration: 20,
@@ -370,7 +377,8 @@ const  DUMMY_MEALS = [
     affordability: Affordability.Affordable,
     complexity: Complexity.Hard,
     imageUrl:
-    'assets/a.png',
+    // 'assets/a.png',
+    'assets/b.jpeg',
 
         // 'https://cdn.pixabay.com/photo/2014/08/07/21/07/souffle-412785_1280.jpg',
     duration: 45,
