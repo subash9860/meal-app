@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../widgets/category_items.dart';
 
+import '../widgets/category_items.dart';
 import '../dummy_data.dart';
 
 class CatagoryScreen extends StatelessWidget {
@@ -8,11 +8,13 @@ class CatagoryScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title:const Text('Category Screen'),
-      ),
-      body: GridView(
+    return 
+    // Scaffold(
+    //   appBar: AppBar(
+    //     title:const Text('Category Screen'),
+    //   ),
+    //   body: 
+      GridView(
         padding:const EdgeInsets.all(25),
         gridDelegate:const SliverGridDelegateWithMaxCrossAxisExtent(
           maxCrossAxisExtent: 200,
@@ -27,7 +29,7 @@ class CatagoryScreen extends StatelessWidget {
                   catData.color,
                 ))
             .toList(),
-      ),
+      // ),
     );
   }
 }
