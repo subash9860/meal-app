@@ -27,7 +27,7 @@ class _MyAppState extends State<MyApp> {
     'vegeritan': false
   };
   List<Meal> _avialableMeals = DUMMY_MEALS;
-  List<Meal> _favoritesMeals = [];
+ final List<Meal> _favoritesMeals = [];
   void _setFilters(Map<String, bool> filterData) {
     setState(() {
       _filters = filterData;
@@ -100,7 +100,7 @@ class _MyAppState extends State<MyApp> {
         FiltersScreen.routeName: (ctx) => FiltersScreen(_filters, _setFilters),
       },
       onGenerateRoute: (settings) {
-        print(settings.arguments);
+        // print(settings.arguments);
         // if(settings.name == "/meal-detail")
         // {
         //   return ...;
@@ -111,7 +111,7 @@ class _MyAppState extends State<MyApp> {
         // return MaterialPageRoute(builder: (ctx)=> CatagoryScreen());
       },
       onUnknownRoute: (settings) {
-        return MaterialPageRoute(builder: (ctx) => CatagoryScreen());
+        return MaterialPageRoute(builder: (ctx) =>const CatagoryScreen());
       },
     );
   }

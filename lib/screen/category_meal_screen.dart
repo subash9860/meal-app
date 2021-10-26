@@ -22,7 +22,7 @@ class CategoryMealScreen extends StatefulWidget {
 
 class _CategoryMealScreenState extends State<CategoryMealScreen> {
   String? categoryTitle;
-  List<Meal>? CatergoriesMeal;
+  List<Meal>? catergoriesMeal;
   var changestate = false;
 
   @override
@@ -32,7 +32,7 @@ class _CategoryMealScreenState extends State<CategoryMealScreen> {
           ModalRoute.of(context)!.settings.arguments as Map<String, String>;
       categoryTitle = routeArgs['title'];
       final categoryId = routeArgs['id'];
-      CatergoriesMeal = widget.avialableMeal.where((meal) {
+      catergoriesMeal = widget.avialableMeal.where((meal) {
         return meal.categories.contains(categoryId);
       }).toList();
     }
@@ -42,7 +42,7 @@ class _CategoryMealScreenState extends State<CategoryMealScreen> {
 
   void deleteMeal(String mealId) {
     setState(() {
-      CatergoriesMeal!.removeWhere((element) => element.id == mealId);
+      catergoriesMeal!.removeWhere((element) => element.id == mealId);
     });
   }
 
@@ -55,16 +55,16 @@ class _CategoryMealScreenState extends State<CategoryMealScreen> {
         body: ListView.builder(
           itemBuilder: (ctx, index) {
             return MealItem(
-              id: CatergoriesMeal![index].id,
-              title: CatergoriesMeal![index].title,
-              imageurl: CatergoriesMeal![index].imageUrl,
-              affordability: CatergoriesMeal![index].affordability,
-              complexity: CatergoriesMeal![index].complexity,
-              duration: CatergoriesMeal![index].duration,
+              id: catergoriesMeal![index].id,
+              title: catergoriesMeal![index].title,
+              imageurl: catergoriesMeal![index].imageUrl,
+              affordability: catergoriesMeal![index].affordability,
+              complexity: catergoriesMeal![index].complexity,
+              duration: catergoriesMeal![index].duration,
               // delectMeal: deleteMeal,
             );
           },
-          itemCount: CatergoriesMeal!.length,
+          itemCount: catergoriesMeal!.length,
         ));
   }
 }

@@ -8,7 +8,7 @@ class TabsScreen extends StatefulWidget {
   // const TabsScreen({Key? key}) : super(key: key);
   final List<Meal> favoritesMeal;
 
-  TabsScreen(this.favoritesMeal);
+  const TabsScreen(this.favoritesMeal, {Key? key}) : super(key: key);
 
   @override
   _TabsScreenState createState() => _TabsScreenState();
@@ -22,10 +22,10 @@ class _TabsScreenState extends State<TabsScreen> {
   @override
   initState() {
     _page = [
-      {'page': CatagoryScreen(), 'title': Text("Meal")},
+      {'page': const CatagoryScreen(), 'title': const Text("Meal")},
       {
         'page': FavoritesScreen(widget.favoritesMeal),
-        'title': Text("Your Favorite")
+        'title': const Text("Your Favorite")
       }
     ];
     super.initState();
@@ -67,7 +67,7 @@ class _TabsScreenState extends State<TabsScreen> {
         //       icon: Icon(Icons.star),
         //       text: "Favorites",) ],),
       ),
-      endDrawer: MainDrawer(),
+      endDrawer: const MainDrawer(),
 
       body: _page[_pageIndex]['page'],
       // TabBarView(
@@ -79,7 +79,7 @@ class _TabsScreenState extends State<TabsScreen> {
         unselectedItemColor: Colors.white,
         currentIndex: _pageIndex,
         // type: BottomNavigationBarType.shifting,
-        items: [
+        items: const [
           BottomNavigationBarItem(
               // backgroundColor: Colors.redAccent,
               icon: Icon(Icons.category),

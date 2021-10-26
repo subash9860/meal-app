@@ -6,7 +6,7 @@ class MealsDetails extends StatelessWidget {
   final Function isMealFavorites;
 
   final Function toggleFavorites;
-  MealsDetails(this.isMealFavorites, this.toggleFavorites);
+  const MealsDetails(this.isMealFavorites, this.toggleFavorites, {Key? key}) : super(key: key);
   // const MealsDetails({Key? key}) : super(key: key);
 
   @override
@@ -15,7 +15,7 @@ class MealsDetails extends StatelessWidget {
     final selectedMeal = DUMMY_MEALS.firstWhere((meal) => mealId == meal.id);
     return Scaffold(
         appBar: AppBar(
-          title: Text('${selectedMeal.title}'),
+          title: Text(selectedMeal.title),
         ),
         body: SingleChildScrollView(
           child: Column(
@@ -25,8 +25,8 @@ class MealsDetails extends StatelessWidget {
                     color: Colors.white,
                     border: Border.all(color: Colors.grey),
                     borderRadius: BorderRadius.circular(10)),
-                margin: EdgeInsets.all(10),
-                padding: EdgeInsets.all(10),
+                margin: const EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 height: 300,
                 width: double.infinity,
                 child: Image.asset(
@@ -37,7 +37,7 @@ class MealsDetails extends StatelessWidget {
               Row(
                 children: [
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 40),
+                    margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 40),
                     child: Text(
                       'Ingredients',
                       style: Theme.of(context).textTheme.headline6,
@@ -45,7 +45,7 @@ class MealsDetails extends StatelessWidget {
                     ),
                   ),
                   IconButton(
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.delete,
                       size: 40,
                     ),
@@ -60,8 +60,8 @@ class MealsDetails extends StatelessWidget {
                     color: Colors.white,
                     border: Border.all(color: Colors.grey),
                     borderRadius: BorderRadius.circular(10)),
-                margin: EdgeInsets.all(10),
-                padding: EdgeInsets.all(10),
+                margin: const EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 height: 200,
                 width: MediaQuery.of(context).size.width * 0.85,
                 child: ListView.builder(
@@ -75,7 +75,7 @@ class MealsDetails extends StatelessWidget {
                         )),
               ),
               Container(
-                margin: EdgeInsets.symmetric(vertical: 10),
+                margin: const EdgeInsets.symmetric(vertical: 10),
                 child: Text(
                   'Steps',
                   style: Theme.of(context).textTheme.headline6,
@@ -86,8 +86,8 @@ class MealsDetails extends StatelessWidget {
                     color: Colors.white,
                     border: Border.all(color: Colors.grey),
                     borderRadius: BorderRadius.circular(10)),
-                margin: EdgeInsets.all(10),
-                padding: EdgeInsets.all(10),
+                margin: const EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 height: 200,
                 width: MediaQuery.of(context).size.width * 0.85,
                 child: ListView.builder(

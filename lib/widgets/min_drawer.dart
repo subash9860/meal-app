@@ -13,7 +13,7 @@ class MainDrawer extends StatelessWidget {
       ),
       title: Text(
         title,
-        style: TextStyle(
+        style: const TextStyle(
             fontFamily: 'RobotoCondensed',
             fontSize: 24,
             fontWeight: FontWeight.w700,
@@ -31,10 +31,10 @@ class MainDrawer extends StatelessWidget {
           Container(
             height: MediaQuery.of(context).size.height * 0.18,
             width: double.infinity,
-            padding: EdgeInsets.all(40),
+            padding: const EdgeInsets.all(40),
             alignment: Alignment.bottomLeft,
             color: Colors.amberAccent,
-            child: Text(
+            child: const Text(
               'Cooking Up!',
               style: TextStyle(
                   fontFamily: 'RobotoCondensed',
@@ -43,7 +43,7 @@ class MainDrawer extends StatelessWidget {
                   color: Colors.black),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           buildListTile('Meals', Icons.restaurant, () {

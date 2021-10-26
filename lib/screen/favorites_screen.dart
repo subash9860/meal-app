@@ -5,13 +5,12 @@ import 'package:meal_app/widgets/meal_items.dart';
 class FavoritesScreen extends StatelessWidget {
   final List<Meal> favoritesMeal;
 
-  FavoritesScreen(this.favoritesMeal);
-  // const FavoritesScreen({Key? key}) : super(key: key);
+  const FavoritesScreen(this.favoritesMeal, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
    if (favoritesMeal.isEmpty) {
-      return Center(
+      return const Center(
         child: Text('You have no filters yet! start adding some.'),
       );
     }

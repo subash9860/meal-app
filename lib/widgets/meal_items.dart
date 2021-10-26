@@ -12,8 +12,7 @@ class MealItem extends StatelessWidget {
   final int duration;
   // final Function delectMeal;
 
-  const MealItem({
-    Key? key,
+   const MealItem({Key? key, 
     required this.id,
     required this.title,
     required this.imageurl,
@@ -21,7 +20,7 @@ class MealItem extends StatelessWidget {
     required this.complexity,
     required this.duration,
     // this.delectMeal,
-  });
+  }) : super(key: key);
 
   get complexityText {
     switch (complexity) {
@@ -96,7 +95,7 @@ class MealItem extends StatelessWidget {
                     ),
                     child: Text(
                       title,
-                      style: TextStyle(fontSize: 26, color: Colors.white),
+                      style: const TextStyle(fontSize: 26, color: Colors.white),
                       softWrap: true,
                       overflow: TextOverflow.fade,
                     ),
@@ -111,40 +110,40 @@ class MealItem extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      Icon(
+                      const Icon(
                         Icons.schedule,
                         size: 30,
                       ),
-                      SizedBox(width: 5),
+                      const SizedBox(width: 5),
                       Text(
                         '$duration min  ',
-                        style: TextStyle(fontSize: 18),
+                        style: const TextStyle(fontSize: 18),
                       )
                     ],
                   ),
                   Row(
                     children: [
-                      Icon(
+                      const Icon(
                         Icons.work,
                         size: 30,
                       ),
-                      SizedBox(width: 5),
+                      const SizedBox(width: 5),
                       Text(
                         '$complexityText',
-                        style: TextStyle(fontSize: 18),
+                        style: const TextStyle(fontSize: 18),
                       )
                     ],
                   ),
                   Row(
                     children: [
-                      Icon(
+                      const Icon(
                         Icons.attach_money,
                         size: 30,
                       ),
-                      SizedBox(width: 5),
+                      const SizedBox(width: 5),
                       Text(
                         '$affordabilityText',
-                        style: TextStyle(fontSize: 18),
+                        style: const TextStyle(fontSize: 18),
                       )
                     ],
                   )
