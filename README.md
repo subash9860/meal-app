@@ -5,7 +5,7 @@ Simple Meal deatil showing Mobile Appliction
 ## Adding to Favourites
 
 ## Demo looks
-![UI](./readmeAssets/UI.png)
+![UI](./assets/mealAppVideo.mp4)
 
 ## About
 This is flutter app. 
