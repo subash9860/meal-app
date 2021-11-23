@@ -1,21 +1,19 @@
-# meal_app
+# Meal app 
 
 Simple Meal deatil showing Mobile Appliction 
-## Filters meal
-## Adding to Favourites
-
-## Demo looks
-<<<<<<< HEAD
-![UI](./assets/mealAppVideo.mp4)
-=======
-![UI](./Assets/UI.png)
->>>>>>> 1a988103c2ab211fcb58e685d5d606717c9116b8
-
-## About
 This is flutter app. 
 Simply showing list of items and their details.
 Filtering meal according to chooice.
 Adding meal to Favourites.
 
-## Thank you for visiting 
-Thank you for visiting.
+## [View in Web](https://subash9860.github.io/meal-app/)
+
+### Snapshots
+<img height="480px" src="/assets/1.png">
+<img height="480px" src="/assets/2.png">
+<img height="480px" src="/assets/3.png">
+<img height="480px" src="/assets/4.png">
+<img height="480px" src="/assets/5.png">
+<img height="480px" src="/assets/6.png">
+
+## Thank you so much for visiting.

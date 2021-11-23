@@ -6,7 +6,8 @@ class MealsDetails extends StatelessWidget {
   final Function isMealFavorites;
 
   final Function toggleFavorites;
-  const MealsDetails(this.isMealFavorites, this.toggleFavorites, {Key? key}) : super(key: key);
+  const MealsDetails(this.isMealFavorites, this.toggleFavorites, {Key? key})
+      : super(key: key);
   // const MealsDetails({Key? key}) : super(key: key);
 
   @override
@@ -29,7 +30,7 @@ class MealsDetails extends StatelessWidget {
                 padding: const EdgeInsets.all(10),
                 height: 300,
                 width: double.infinity,
-                child: Image.asset(
+                child: Image.network(
                   selectedMeal.imageUrl,
                   fit: BoxFit.cover,
                 ),
@@ -37,7 +38,8 @@ class MealsDetails extends StatelessWidget {
               Row(
                 children: [
                   Container(
-                    margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 40),
+                    margin: const EdgeInsets.symmetric(
+                        vertical: 10, horizontal: 40),
                     child: Text(
                       'Ingredients',
                       style: Theme.of(context).textTheme.headline6,
@@ -105,7 +107,7 @@ class MealsDetails extends StatelessWidget {
           ),
         ),
         floatingActionButton: FloatingActionButton(
-          onPressed:()=> toggleFavorites(mealId),
+          onPressed: () => toggleFavorites(mealId),
           child: Icon(
             isMealFavorites(mealId) ? Icons.star : Icons.star_border,
           ),
